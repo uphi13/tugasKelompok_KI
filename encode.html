@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Steganografi App - Encode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Kembali</a>
+        <h1>Encode Pesan</h1>
+        <div class="input-section">
+            <div class="file-input">
+                <label for="image-input">
+                    <i class="fas fa-image"></i>
+                    <span id="file-name">Pilih Gambar</span>
+                </label>
+                <input type="file" id="image-input" accept="image/*" required>
+            </div>
+            <input id="message-input" placeholder="Masukkan pesan..."></input>
+            <div class="buttons">
+                <button id="encode-btn" class="btn encode"><i class="fas fa-lock"></i> Encode</button>
+                <button id="save-image-btn" class="btn save-image"><i class="fas fa-save"></i> Simpan Gambar</button>
+                <button id="reset-btn" class="btn reset"><i class="fas fa-undo"></i> Reset</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <div id="encoded-image-container" class="image-container">
+                <i class="fas fa-image-slash"></i>
+                <p>Tidak ada gambar terenkode</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

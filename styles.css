@@ -1,0 +1,250 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Styling untuk halaman utama */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Warna tombol encode */
+.btn.encode {
+    background-color: #4CAF50;
+}
+
+.btn.encode:hover {
+    background-color: #388E3C;
+}
+
+/* Warna tombol decode */
+.btn.decode {
+    background-color: #2196F3;
+}
+
+.btn.decode:hover {
+    background-color: #0D47A1;
+}
+
+/* Warna tombol reset */
+.btn.reset {
+    background-color: #F44336;
+}
+
+.btn.reset:hover {
+    background-color: #B71C1C;
+}
+
+/* Ikon tombol */
+.btn i {
+    margin-right: 10px;
+}
+
+.btn.encode i {
+    font-size: 18px;
+}
+
+.btn.decode i {
+    font-size: 18px;
+}
+
+.btn.reset i {
+    font-size: 18px;
+}
+
+/* Styling untuk tombol simpan gambar */
+.btn.save-image {
+    background-color: #FF9800;
+}
+
+.btn.save-image:hover {
+    background-color: #EF6C00;
+}
+
+.btn.save-image i {
+    font-size: 18px;
+}
+
+/* Styling untuk tautan kembali */
+.back-link {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #1a252f;
+}
+
+.back-link i {
+    margin-right: 5px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.file-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.file-input label {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.file-input label:hover {
+    background-color: #1a252f;
+}
+
+.file-input label i {
+    margin-right: 10px;
+}
+
+.file-input input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+#file-name {
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+#message-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #1a252f;
+}
+
+.output-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image-container,
+.message-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.image-container i,
+.message-container i {
+    font-size: 48px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
